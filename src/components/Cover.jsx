@@ -3,7 +3,7 @@ import React from "react";
 const Cover = () => {
   return (
     <div className="bg-[#F6F6F6] w-full h-[440px] mt-[21px]   ">
-      <div className="max-w-[1116px] m-auto flex justify-between items-center ml-[182px] ">
+      <div className="max-w-[1116px] mx-auto flex justify-between items-center ">
         <div>
           <h1 className="text-[#202533] text-[32px] font-bold ">
             Fresh Arrivals Online
