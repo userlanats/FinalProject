@@ -3,9 +3,13 @@ import React from "react";
 const BestSeling = () => {
   return (
     <div className=" mt-[72px]  w-[1116px] h-[568px] m-auto">
-      <div >
-        <h5 className="text-[12px] text-[#878A92] w-[71px] h-[24px] ml-[479px]  ">Shop Now</h5>
-        <h1 className="text-[24px] text-[#0E1422] font-bold w-[139px] h-[29px] ml-[478px]">Best Selling</h1>
+      <div>
+        <h5 className="text-[12px] text-[#878A92] w-[71px] h-[24px] ml-[479px]  ">
+          Shop Now
+        </h5>
+        <h1 className="text-[24px] text-[#0E1422] font-bold w-[139px] h-[29px] ml-[478px]">
+          Best Selling
+        </h1>
       </div>
 
       <div className="grid grid-cols-4 gap-[20px] mt-[80px] max-w-[1116px] m-auto ">
@@ -18,7 +22,7 @@ const BestSeling = () => {
           <p className="text-[14px] text-[#0E1422] align-center mt-[24px] font-bold">
             Classic Monochrome Tees
           </p>
-          <div className="w-[239px] h-[28px] flex justify-between items-center mt-[12px] ">
+          <div className="w-[239px] h-[28px] flex gap-[16px]  items-center mt-[12px] ">
             <button className="text-[#0E1422] w-[89px] h-[28px] text-[12px] rounded-[100px] border-solid border-[#E6E7E8] border-2">
               IN STOCK
             </button>
@@ -34,7 +38,7 @@ const BestSeling = () => {
           <p className="text-[14px] text-[#0E1422] align-center mt-[24px] font-bold">
             Monochromatic Wardrobe
           </p>
-          <div className="w-[239px] h-[28px] flex justify-between items-center mt-[12px]">
+          <div className="w-[239px] h-[28px] flex gap-[16px]  items-center mt-[12px]">
             <button className="text-[#0E1422] w-[89px] h-[28px]  text-[12px] rounded-[100px] border-solid border-[#E6E7E8] border-2">
               IN STOCK
             </button>
@@ -50,7 +54,7 @@ const BestSeling = () => {
           <p className="text-[14px] text-[#0E1422] align-center mt-[24px] font-bold">
             Essential Neutrals
           </p>
-          <div className="w-[239px] h-[28px] flex justify-between items-center mt-[12px]">
+          <div className="w-[239px] h-[28px] flex gap-[16px]  items-center mt-[12px]">
             <button className="text-[#0E1422] w-[89px] h-[28px]  text-[12px] rounded-[100px] border-solid border-[#E6E7E8] border-2">
               IN STOCK
             </button>
@@ -66,7 +70,7 @@ const BestSeling = () => {
           <p className="text-[14px] text-[#0E1422] align-center mt-[24px] font-bold">
             UTRAANET Black
           </p>
-          <div className="w-[239px] h-[28px] flex justify-between items-center mt-[12px]">
+          <div className="w-[239px] h-[28px] flex gap-[16px]  items-center mt-[12px]">
             <button className="text-[#0E1422] w-[89px] h-[28px]  text-[12px] rounded-[100px] border-solid border-[#E6E7E8] border-2">
               IN STOCK
             </button>
