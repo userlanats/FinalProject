@@ -16,7 +16,7 @@ const ProductList = () => {
         <div className="grid grid-cols-4 gap-[20px] mt-[80px] max-w-[1116px] m-auto ">
           <div className="w-[264px] h-[434px]">
             <img
-              className="w-[248px] h-[312px] rounded"
+              className="w-full h-[312px] rounded"
               src="images/tshirt-5.png"
               alt="tshirt-5"
             />
@@ -32,7 +32,7 @@ const ProductList = () => {
           </div>
           <div className="w-[264px] h-[434px]">
             <img
-              className="w-[248px] h-[312px] rounded"
+              className="w-full h-[312px] rounded"
               src="images/tshirt-6.png"
               alt="tshirt-6"
             />
@@ -48,7 +48,7 @@ const ProductList = () => {
           </div>
           <div className="w-[264px] h-[434px]">
             <img
-              className="w-[248px] h-[312px] rounded"
+              className="w-full h-[312px] rounded"
               src="images/tshirt-7.png"
               alt="tshirt-7"
             />
@@ -64,7 +64,7 @@ const ProductList = () => {
           </div>
           <div className="w-[264px] h-[434px]">
             <img
-              className="w-[248px] h-[312px] rounded"
+              className="w-full h-[312px] rounded"
               src="images/tshirt-8.png"
               alt="tshirt-8"
             />

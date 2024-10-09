@@ -15,7 +15,7 @@ const BestSeling = () => {
       <div className="grid grid-cols-4 gap-[20px] mt-[80px] max-w-[1116px] m-auto ">
         <div className="w-[264px] h-[434px]">
           <img
-            className="w-[248px] h-[312px] rounded"
+            className="w-full h-[312px] rounded"
             src="images/tshirt-1.png"
             alt="tshirt-1"
           />
@@ -31,7 +31,7 @@ const BestSeling = () => {
         </div>
         <div className="w-[264px] h-[434px]">
           <img
-            className="w-[248px] h-[312px] rounded"
+            className="w-full h-[312px] rounded"
             src="images/tshirt-2.png"
             alt="tshirt-1"
           />
@@ -47,7 +47,7 @@ const BestSeling = () => {
         </div>
         <div className="w-[264px] h-[434px]">
           <img
-            className="w-[248px] h-[312px] rounded"
+            className="w-full h-[312px] rounded"
             src="images/tshirt-3.png"
             alt="tshirt-3"
           />
@@ -63,7 +63,7 @@ const BestSeling = () => {
         </div>
         <div className="w-[264px] h-[434px]">
           <img
-            className="w-[248px] h-[312px] rounded"
+            className="w-full h-[312px] rounded"
             src="images/tshirt-4.png"
             alt="tshirt-1"
           />

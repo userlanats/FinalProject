@@ -26,11 +26,11 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex max-w-[1116px] mx-auto">
-        <div className="mt-[88px]   ">
-          <div className="flex items-center w-[168px] h-[44px]">
+      <div className="flex justify-between max-w-[1116px] py-[176px] mx-auto">
+        <div className="mt-[10px]">
+          <div className="flex items-center w-full h-[44px]">
             <img src="/images/logotetrfonze.svg" alt="logo" />
-            <h1 className="text-[#0E1422] items-center text-[20px] font-bold ml-[16px]">
+            <h1 className="text-[#0E1422] items-center text-[20px]  font-bold ml-[16px]">
               Ecommerce
             </h1>
           </div>
@@ -40,7 +40,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex mt-[32px] gap-[24px] w-[120px] h-[24px]">
+          <div className="flex mt-[32px] gap-[24px] w-full h-[24px]">
             <img
               className="w-[24px] h-[24px]"
               src="/images/Githubicon.svg"
@@ -58,32 +58,32 @@ const Footer = () => {
             />
           </div>
         </div>
-        <div className="flex justify-between mt-[74px] ml-[98px] w-[390px] ">
+        <div className="flex justify-between w-[390px] ">
           <div>
-            <h5 className="text-[14px] text-[#878A92] w-[67px] h-[25px]">
+            <h5 className="text-[14px] text-[#878A92] w-full h-[25px] ">
               SUPPORT
             </h5>
-            <h6 className="mt-[16px] text-[14px] text-[#5C5F6A] w-[28px] h-[25px]">
+            <h6 className="mt-[16px] text-[14px] text-[#5C5F6A] w-full h-[25px] ">
               FAQ
             </h6>
-            <h6 className="mt-[16px] text-[14px] text-[#5C5F6A] w-[87px] h-[25px]">
+            <h6 className="mt-[16px] text-[14px] text-[#5C5F6A] w-full h-[25px]">
               Terms of use
             </h6>
-            <h6 className="mt-[16px] text-[14px] text-[#5C5F6A] w-[94px] h-[25px]">
+            <h6 className="mt-[16px] text-[14px] text-[#5C5F6A] w-full h-[25px]">
               Privacy Policy
             </h6>
           </div>
           <div>
-            <h5 className="text-[14px] text-[#878A92] w-[72px] h-[25px]">
+            <h5 className="text-[14px] text-[#878A92] w-full h-[25px]">
               COMPANY
             </h5>
-            <h6 className="mt-[16px] text-[14px] text-[#5C5F6A] w-[61px] h-[25px]">
+            <h6 className="mt-[16px] text-[14px] text-[#5C5F6A] w-full h-[25px]">
               About us
             </h6>
-            <h6 className="mt-[16px] text-[14px] text-[#5C5F6A] w-[54px] h-[25px]">
+            <h6 className="mt-[16px] text-[14px] text-[#5C5F6A] w-full h-[25px]">
               Contact
             </h6>
-            <h6 className="mt-[16px] text-[14px] text-[#5C5F6A] w-[53px] h-[25px]">
+            <h6 className="mt-[16px] text-[14px] text-[#5C5F6A] w-full h-[25px]">
               Careers
             </h6>
           </div>
@@ -91,19 +91,19 @@ const Footer = () => {
             <h5 className="text-[14px] text-[#878A92] w-[40px] h-[25px]">
               SHOP
             </h5>
-            <h6 className="mt-[16px] text-[14px] text-[#5C5F6A] w-[81px] h-[25px]">
+            <h6 className="mt-[16px] text-[14px] text-[#5C5F6A] w-full h-[25px]">
               My Account
             </h6>
-            <h6 className="mt-[16px] text-[14px] text-[#5C5F6A] w-[65px] h-[25px]">
+            <h6 className="mt-[16px] text-[14px] text-[#5C5F6A] w-full h-[25px]">
               Checkout
             </h6>
-            <h6 className="mt-[16px] text-[14px] text-[#5C5F6A] w-[30px] h-[25px]">
+            <h6 className="mt-[16px] text-[14px] text-[#5C5F6A] w-full h-[25px]">
               Checkout
             </h6>
           </div>
         </div>
-        <div className="mt-[79px] ml-[159px]">
-          <h1 className="text-[14px] text-[#878A92] w-[155px] h-[25px]">
+        <div className="">
+          <h1 className="text-[14px] text-[#878A92] w-full h-[25px]">
             ACCEPTED PAYMENTS
           </h1>
           <div className="flex mt-[40px] w-[176.03px] h-[32px] opacity-[80%]">
