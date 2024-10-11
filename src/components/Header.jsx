@@ -9,9 +9,9 @@ const Header = () => {
   return (
     <div>
       <Discount />
-      <div className="flex items-center text-center mt-[30px] max-w-[1116px] mx-auto">
+      <div className="flex items-center text-center mt-[30px] max-w-[1116px] mx-auto justify-between">
         <Logo />
-        <div className="flex gap-[81px] items-center">
+        <div className="flex gap-[81px] items-center ">
           <Navigation />
           <Search />
           <Icons />
