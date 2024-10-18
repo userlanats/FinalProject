@@ -4,7 +4,7 @@ import ComponentProperties from "../components/ComponentProperties";
 import ProductTshirtDetails from "../components/ProductTshirtDetails";
 import ProductReviews from "../components/ProductReviews";
 import SimilarProductsBestSeling from "../components/SimilarProductsBestSeling";
-import Footer from "../components/Footer"
+import Footer from "../components/Footer";
 
 const Product = () => {
   return (

@@ -13,7 +13,7 @@ const BestSeling = () => {
       </div>
 
       <div className="grid grid-cols-4 gap-[20px] mt-[80px] max-w-[1116px] m-auto ">
-        <div className="w-[264px] h-[434px]">
+        <div className="w-[264px] h-[434px] px-[8px] py-[16px]">
           <img
             className="w-full h-[312px] rounded"
             src="images/tshirt-1.png"
@@ -29,7 +29,7 @@ const BestSeling = () => {
             <p className="text-[#474B57] text-[14px]">$35.00</p>
           </div>
         </div>
-        <div className="w-[264px] h-[434px]">
+        <div className="w-[264px] h-[434px] px-[8px] py-[16px]">
           <img
             className="w-full h-[312px] rounded"
             src="images/tshirt-2.png"
@@ -45,7 +45,7 @@ const BestSeling = () => {
             <p className="text-[#474B57] text-[14px]">$27.00</p>
           </div>
         </div>
-        <div className="w-[264px] h-[434px]">
+        <div className="w-[264px] h-[434px] px-[8px] py-[16px]">
           <img
             className="w-full h-[312px] rounded"
             src="images/tshirt-3.png"
@@ -61,7 +61,7 @@ const BestSeling = () => {
             <p className="text-[#474B57] text-[14px]">$22.00</p>
           </div>
         </div>
-        <div className="w-[264px] h-[434px]">
+        <div className="w-[264px] h-[434px] px-[8px] py-[16px]">
           <img
             className="w-full h-[312px] rounded"
             src="images/tshirt-4.png"

@@ -14,7 +14,7 @@ const ProductList = () => {
         </div>
 
         <div className="grid grid-cols-4 gap-[20px] mt-[80px] max-w-[1116px] m-auto ">
-          <div className="w-[264px] h-[434px]">
+          <div className="w-[264px] h-[434px] px-[8px] py-[16px]">
             <img
               className="w-full h-[312px] rounded"
               src="images/tshirt-5.png"
@@ -30,7 +30,7 @@ const ProductList = () => {
               <p className="text-[#474B57] text-[14px]">$35.00</p>
             </div>
           </div>
-          <div className="w-[264px] h-[434px]">
+          <div className="w-[264px] h-[434px] px-[8px] py-[16px]">
             <img
               className="w-full h-[312px] rounded"
               src="images/tshirt-6.png"
@@ -46,7 +46,7 @@ const ProductList = () => {
               <p className="text-[#474B57] text-[14px]">$57.00</p>
             </div>
           </div>
-          <div className="w-[264px] h-[434px]">
+          <div className="w-[264px] h-[434px] px-[8px] py-[16px]">
             <img
               className="w-full h-[312px] rounded"
               src="images/tshirt-7.png"
@@ -62,7 +62,7 @@ const ProductList = () => {
               <p className="text-[#474B57] text-[14px]">$19.00</p>
             </div>
           </div>
-          <div className="w-[264px] h-[434px]">
+          <div className="w-[264px] h-[434px] px-[8px] py-[16px]">
             <img
               className="w-full h-[312px] rounded"
               src="images/tshirt-8.png"

@@ -40,14 +40,11 @@ const ProductReviews = () => {
         </div>
         {/* ---------------------------- */}
         <div className="w-full flex h-[161px] rounded-[4px] mt-[24px] ">
-          <div className="rounded-full relative ml-[8px] bg-[#F0F1FF] w-[48px] h-[48px] mt-[39px] ">
-            <div className="text-[#4078FF] absolute mt-[50%] ml-[50%] transform translate-x-[-50%] translate-y-[-50%]">
-              ED
-            </div>
+          <div className="flex justify-center items-center w-[48px] h-[48px] text-[#4078FF] bg-[#F0F1FF] rounded-full">
+            <span>ED</span>
           </div>
 
-          {/* -------------------------------- */}
-          <div className=" w-full h-[96px] pl-[24px] pr-[17px] mt-[38px] ">
+          <div className=" w-[90%] ml-4 h-[96px] ">
             <div className="flex justify-between">
               <h5 className="text-[#0E1422] text-[14px] font-semibold">
                 Emily Davis
@@ -90,14 +87,11 @@ const ProductReviews = () => {
           </div>
         </div>
         <div className="w-full flex h-[161px] rounded-[4px]  ">
-          <div className="rounded-full relative ml-[8px] bg-[#F0F1FF] w-[48px] h-[48px] mt-[39px] ">
-            <div className="text-[#4078FF] absolute mt-[50%] ml-[50%] transform translate-x-[-50%] translate-y-[-50%]">
-              ED
-            </div>
+          <div className="flex justify-center items-center w-[48px] h-[48px] text-[#4078FF] bg-[#F0F1FF] rounded-full">
+            <span>ED</span>
           </div>
 
-          {/* -------------------------------- */}
-          <div className=" w-full h-[96px] pl-[24px] pr-[17px] mt-[38px] ">
+          <div className=" w-[90%] ml-4 h-[96px] ">
             <div className="flex justify-between">
               <h5 className="text-[#0E1422] text-[14px] font-semibold">
                 Daniel Smith
@@ -139,14 +133,11 @@ const ProductReviews = () => {
           </div>
         </div>
         <div className="w-full flex h-[161px] rounded-[4px] ">
-          <div className="rounded-full relative ml-[8px] bg-[#F0F1FF] w-[48px] h-[48px] mt-[39px] ">
-            <div className="text-[#4078FF] absolute mt-[50%] ml-[50%] transform translate-x-[-50%] translate-y-[-50%]">
-              ED
-            </div>
+          <div className="flex justify-center items-center w-[48px] h-[48px] text-[#4078FF] bg-[#F0F1FF] rounded-full">
+            <span>ED</span>
           </div>
 
-          {/* -------------------------------- */}
-          <div className=" w-full h-[96px] pl-[24px] pr-[17px] mt-[38px] ">
+          <div className=" w-[90%] ml-4 h-[96px] ">
             <div className="flex justify-between">
               <h5 className="text-[#0E1422] text-[14px] font-semibold">
                 Benjamin Clark
@@ -186,11 +177,10 @@ const ProductReviews = () => {
               These guys know their stuff, and it shows in their products.
             </p>
             <button className="w-[175px] h-[44px] bg-[#FFFFFF] text-[#5C5F6A] text-[14px] rounded-[4px] border-[1px] border-[#B6B7BC] flex mx-auto justify-center items-center mt-[64px]">
-          Load more reviews
-        </button>
+              Load more reviews
+            </button>
           </div>
         </div>
-        
       </div>
     </div>
   );

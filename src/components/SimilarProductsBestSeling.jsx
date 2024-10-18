@@ -2,7 +2,7 @@ import React from "react";
 
 const SimilarProductsBestSeling = () => {
   return (
-    <div className="  w-[1116px] h-[568px] m-auto">
+    <div className="  max-w-[1116px] min-w-[1170px] h-[568px] m-auto">
       <div className="mt-[136px]">
         <h1 className="text-[24px] text-[#0E1422] font-bold ">
           You might also like

@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="mt-[176px]  w-full h-[629px]">
+    <div className="mt-[176px]  w-full min-w-[1170px] h-[629px]">
       <div className=" bg-[#F6F6F6] w-full">
-        <div className="max-w-[1116px] mx-auto  h-[200px] flex justify-between ">
+        <div className="max-w-[1116px] m-auto  h-[200px] flex justify-between ">
           <div className=" mt-[64px] ">
             <h1 className=" text-[24px] text-[#0E1422] font-bold  ">
               Join Our Newsletter
