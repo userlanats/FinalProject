@@ -1,48 +1,13 @@
 import React from "react";
+import ListingCategory from "./ListingCategory";
 
 const ListingAsideLeft = () => {
   return (
     <aside className="h-[828px] w-[248px] border-[1px] rounded-[6px] border-[#E6E7E8]">
       <div className="px-[18px] py-[24px]">
         <h3 className="text-[#0E1422] text-[14px] font-semibold">Categories</h3>
-        <div className="mt-[26px]">
-          <div className="flex border-b-[1px] gap-[10px] px-[4px] py-[12px]">
-            <input className="w-[18px] h-[18px]" type="checkbox" id="perfume" />
-            <label className="text-[#474B57] text-[14px]" for="Perfume">
-              Perfume
-            </label>
-          </div>
-          <div className="flex border-b-[1px] gap-[10px] px-[4px] py-[12px]">
-            <input className="w-[18px] h-[18px]" type="checkbox" id="perfume" />
-            <label className="text-[#474B57] text-[14px]" for="Perfume">
-              Trousers
-            </label>
-          </div>
-          <div className="flex border-b-[1px] gap-[10px] px-[4px] py-[12px]">
-            <input className="w-[18px] h-[18px]" type="checkbox" id="perfume" />
-            <label className="text-[#474B57] text-[14px]" for="Perfume">
-              Shoe
-            </label>
-          </div>
-          <div className="flex border-b-[1px] gap-[10px] px-[4px] py-[12px]">
-            <input className="w-[18px] h-[18px]" type="checkbox" id="perfume" />
-            <label className="text-[#474B57] text-[14px]" for="Perfume">
-              Handbag
-            </label>
-          </div>
-          <div className="flex border-b-[1px] gap-[10px] px-[4px] py-[12px]">
-            <input className="w-[18px] h-[18px]" type="checkbox" id="perfume" />
-            <label className="text-[#474B57] text-[14px]" for="Perfume">
-              Hat
-            </label>
-          </div>
-          <div className="flex border-b-[1px] gap-[10px] px-[4px] py-[12px]">
-            <input className="w-[18px] h-[18px]" type="checkbox" id="perfume" />
-            <label className="text-[#474B57] text-[14px]" for="Perfume">
-              Thermos
-            </label>
-          </div>
-        </div>
+        <ListingCategory />
+
         <div className="mt-[40px]">
           <h6 className="text-[14px] font-semibold text-[#0E1422]">COLORS</h6>
           <div className="flex mt-[12px] gap-[10px]">

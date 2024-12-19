@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 
 const ProductTshirtDetails = ({ detailsData }) => {
+  const [count, setCount] = useState(1);
+
+  const plus = () => {
+    setCount(count + 1);
+  };
+
+  const minus = () => {
+    if (count === 1) {
+      return null;
+    }
+    setCount(count - 1);
+  };
   return (
     <div className="max-w-[1116px] m-auto h-[574px] flex justify-between ">
       <div className="flex   mt-[16px] ">
@@ -81,18 +93,18 @@ const ProductTshirtDetails = ({ detailsData }) => {
         </div>
         <div className="w-[164px] h-[78px] mt-[32px]">
           <h6 className="text-[#5C5F6A] text-[12px]">QUANTITY</h6>
-          <div className="flex justify-between items-center px-[16px] [164px] h-[44px] rounded-[4px] border-[1px] mt-[10px]">
-            <img
-              className="w-[20px] h-[20px]"
-              src="/images/minus.svg"
-              alt="minus"
-            />
-            <h6 className="text-[14px] text-[#202533] font-semibold">1</h6>
-            <img
-              className="w-[20px] h-[20px]"
-              src="/images/plus.svg"
-              alt="plus"
-            />
+          <div className="flex mt-[20px] mr-[50px]">
+            <div className=" border border-1 flex w-[110px] h-[40px] rounded-[5px] justify-between items-center text-center m-auto px-[15px]">
+              <button className="font-semibold text-[20px]" onClick={minus}>
+                -
+              </button>
+
+              <p className="m-auto">{count}</p>
+
+              <button className="font-semibold text-[20px]" onClick={plus}>
+                +
+              </button>
+            </div>
           </div>
         </div>
         <div className="flex items-center gap-[10px] mt-[40px]">
