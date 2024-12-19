@@ -3,7 +3,7 @@ import React from "react";
 const Pagination = () => {
   return (
     <nav
-      className="max-w-[344px] mt-[64px] flex m-auto "
+      className="max-w-[344px] mt-[100px] flex m-auto "
       aria-label="Page navigation"
     >
       <ul className="flex m-auto list-none items-center gap-[8px] ">

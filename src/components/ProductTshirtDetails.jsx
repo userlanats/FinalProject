@@ -4,36 +4,19 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 
-const ProductTshirtDetails = () => {
+const ProductTshirtDetails = ({ detailsData }) => {
   return (
     <div className="max-w-[1116px] m-auto h-[574px] flex justify-between ">
-      <div className="flex w-[534px] h-[574px] bg-[#F6F6F6] rounded-[5px] mt-[16px] ">
-        <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+      <div className="flex   mt-[16px] ">
+        <Swiper
+          pagination={true}
+          modules={[Pagination]}
+          className="h-[574px] w-[534px]  bg-white border-gray-100 rounded-md shadow-lg  "
+        >
           <SwiperSlide>
             <img
-              className="mx-auto"
-              src="/images/swiperphoto1.png"
-              alt="blackTshirt"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              className="mx-auto"
-              src="/images/swiperphoto1.png"
-              alt="blackTshirt"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              className="mx-auto"
-              src="/images/swiperphoto1.png"
-              alt="blackTshirt"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              className="mx-auto"
-              src="/images/swiperphoto1.png"
+              className="mx-auto w-[237px] h-[312px]  mt-20"
+              src={detailsData.image}
               alt="blackTshirt"
             />
           </SwiperSlide>
@@ -43,7 +26,7 @@ const ProductTshirtDetails = () => {
       <div className="w-[438px] h-[562] mt-[20px]">
         <div className="flex justify-between items-center">
           <h1 className="text-[#0E1422] text-[24px] font-bold">
-            Raw Black T-Shirt Lineup
+            {detailsData.title}
           </h1>
           <img
             className="w-[24px] h-[24px]"
@@ -65,8 +48,9 @@ const ProductTshirtDetails = () => {
           </div>
         </div>
         <h1 className="w-[62px] h-[22px] text-[18px] text-[#0E1422] font-bold mt-[24px]">
-          $75.00
+          ${detailsData.price}
         </h1>
+
         <div className="w-[152px] h-[76px] mt-[32px] ">
           <h6 className="text-[12px] text-[#5C5F6A]">AVILABLE COLORS</h6>
           <div className="flex mt-[10px] gap-[10px]">

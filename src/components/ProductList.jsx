@@ -1,87 +1,88 @@
-import React from "react";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
-const ProductList = () => {
+const Productlist = () => {
+  const [productlist, setProductlist] = useState([]);
+  const [showLatest, setShowLatest] = useState(false);
+
+  const fetchProductlist = async () => {
+    try {
+      const res = await fetch("https://fakestoreapi.com/products");
+      if (!res.ok) {
+        throw new Error("Network response was not ok");
+      }
+      const data = await res.json();
+      setProductlist(data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    fetchProductlist();
+  }, []);
+
+  const handleClick = (click) => {
+    setShowLatest(click === "latest");
+  };
+
+  const showProducts = showLatest
+    ? productlist.slice(12, 16)
+    : productlist.slice(4, 8);
+
   return (
-    <div>
-      <div className=" mt-[72px]  w-[1116px] h-[568px] m-auto">
-        <div className="flex items-center justify-center">
-          <button className="text-[#202533] text-[14px] font-semibold w-[92px] h-[31px] rounded-[100px] border-[1px] border-[#E9E9EB]">
+    <div className="mt-[152px]">
+      <div>
+        <div className="flex justify-center gap-[24px]">
+          <button
+            onClick={() => handleClick("featured")}
+            className={`w-[92px] h-[31px] font-semibold border-solid border-2 rounded-[100px] ${
+              !showLatest ? "border-[#E9E9EB]" : ""
+            } text-[14px] hover:scale-110 hover:bg-gray-200 duration-500`}
+          >
             Featured
           </button>
-          <button className="ml-[24px] text-[#717171] text-[14px] w-[42px] h-[25px]">
+          <button
+            onClick={() => handleClick("latest")}
+            className={`text-[14px] ${
+              showLatest ? "text-[#5C5F6A]" : "text-gray-400"
+            } hover:scale-110 duration-500`}
+          >
             Latest
           </button>
         </div>
 
-        <div className="grid grid-cols-4 gap-[20px] mt-[80px] max-w-[1116px] m-auto ">
-          <div className="w-[264px] h-[434px] px-[8px] py-[16px]">
-            <img
-              className="w-full h-[312px] rounded"
-              src="images/tshirt-5.png"
-              alt="tshirt-5"
-            />
-            <p className="text-[14px] text-[#0E1422] align-center mt-[24px] font-bold">
-              Elegant Ebony Sweatshirts
-            </p>
-            <div className="w-[239px] h-[28px] flex gap-[16px]  items-center mt-[12px] ">
-              <button className="text-[#0E1422] w-[89px] h-[28px] text-[12px] rounded-[100px] border-solid border-[#E6E7E8] border-2">
-                IN STOCK
-              </button>
-              <p className="text-[#474B57] text-[14px]">$35.00</p>
+        <div className="flex justify-between max-w-[1116px] m-auto mt-[80px]">
+          {showProducts.map((product, index) => (
+            <div key={index}>
+              <Link key={product.id} to={`/product/${product.id}`}>
+                <div className="cursor-pointer transition hover:scale-110 duration-500">
+                  <img
+                    className="w-[248px] h-[312px] px-5 py-5"
+                    src={product.image}
+                    alt={product.title}
+                  />
+                </div>
+                <div>
+                  <p className="font-medium text-sm mt-3 w-[248px] h-[40px]">
+                    {product.title}
+                  </p>
+                  <div className="flex items-center mt-7 gap-[16px]">
+                    <button className="text-center w-20 h-7 rounded-full border text-xs font-medium mt-3 items-center">
+                      IN STOCK {product.stock}
+                    </button>
+                    <div className="mt-3 ml-2 font-normal text-sm text-center">
+                      ${product.price}
+                    </div>
+                  </div>
+                </div>
+              </Link>
             </div>
-          </div>
-          <div className="w-[264px] h-[434px] px-[8px] py-[16px]">
-            <img
-              className="w-full h-[312px] rounded"
-              src="images/tshirt-6.png"
-              alt="tshirt-6"
-            />
-            <p className="text-[14px] text-[#0E1422] align-center mt-[24px] font-bold">
-              Sleek and Cozy Black
-            </p>
-            <div className="w-[239px] h-[28px] flex gap-[16px]  items-center mt-[12px]">
-              <button className="text-[#0E1422] w-[89px] h-[28px]  text-[12px] rounded-[100px] border-solid border-[#E6E7E8] border-2">
-                IN STOCK
-              </button>
-              <p className="text-[#474B57] text-[14px]">$57.00</p>
-            </div>
-          </div>
-          <div className="w-[264px] h-[434px] px-[8px] py-[16px]">
-            <img
-              className="w-full h-[312px] rounded"
-              src="images/tshirt-7.png"
-              alt="tshirt-7"
-            />
-            <p className="text-[14px] text-[#0E1422] align-center mt-[24px] font-bold">
-              Raw Black Tees
-            </p>
-            <div className="w-[239px] h-[28px] flex gap-[16px] items-center mt-[12px]">
-              <button className="text-[#0E1422] w-[89px] h-[28px]  text-[12px] rounded-[100px] border-solid border-[#E6E7E8] border-2">
-                IN STOCK
-              </button>
-              <p className="text-[#474B57] text-[14px]">$19.00</p>
-            </div>
-          </div>
-          <div className="w-[264px] h-[434px] px-[8px] py-[16px]">
-            <img
-              className="w-full h-[312px] rounded"
-              src="images/tshirt-8.png"
-              alt="tshirt-8"
-            />
-            <p className="text-[14px] text-[#0E1422] align-center mt-[24px] font-bold">
-              MOCKUP Black
-            </p>
-            <div className="w-[239px] h-[28px] gap-[16px] flex  items-center mt-[12px]">
-              <button className="text-[#0E1422] w-[89px] h-[28px]  text-[12px] rounded-[100px] border-solid border-[#E6E7E8] border-2">
-                IN STOCK
-              </button>
-              <p className="text-[#474B57] text-[14px]">$30.00</p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
   );
 };
 
-export default ProductList;
+export default Productlist;
