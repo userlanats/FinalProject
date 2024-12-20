@@ -7,6 +7,7 @@ import FashionParadise from "../components/FashionParadise";
 import ProductList from "../components/ProductList";
 import Footer from "../components/Footer";
 
+
 const Main = () => {
   return (
     <div>

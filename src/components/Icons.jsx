@@ -14,7 +14,10 @@ const Icons = () => {
           alt="cart"
         />
       </Link>
-      <Link className="transition hover:-translate-y-1 hover:scale-110 duration-500 rounded-[5px]">
+      <Link
+        className="transition hover:-translate-y-1 hover:scale-110 duration-500 rounded-[5px]"
+        to="/signin"
+      >
         <img
           className="w-[19px] h-[19px]"
           src="/images/Vector.svg"
