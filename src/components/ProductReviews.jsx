@@ -13,7 +13,7 @@ const ProductReviews = () => {
           <h6 className="text-[#5C5F6A] text-[14px]">Details</h6>
         </div>
 
-        <div className="w-[241px] h-[41px] flex items-center gap-[10px] rounded-[8px] bg-[#F6F6F6]">
+        <div className="w-[241px] h-[41px] mt-[15px] flex items-center gap-[10px] rounded-[8px] bg-[#F6F6F6]">
           <img
             className="w-[24px] h-[24px]"
             src="/images/StarIcon.svg"
