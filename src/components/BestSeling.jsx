@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-
 const BestSeling = () => {
   const [apiData, setApiData] = useState([]);
 
@@ -23,13 +22,17 @@ const BestSeling = () => {
 
   return (
     <div className=" mt-[72px]  w-[1116px] h-[568px] m-auto">
-      <div>
-        <h5 className="text-[12px] text-[#878A92] w-[71px] h-[24px] ml-[479px]  ">
-          Shop Now
-        </h5>
-        <h1 className="text-[24px] text-[#0E1422] font-bold w-[139px] h-[29px] ml-[478px]">
-          Best Selling
-        </h1>
+      <div className="">
+        <div className="flex justify-center">
+          <h5 className="text-[12px]  text-[#878A92]  w-[71px] h-[24px]   ">
+            Shop Now
+          </h5>
+        </div>
+        <div className="flex justify-center">
+          <h1 className="text-[24px] text-[#0E1422]  font-bold w-[139px] h-[29px] ">
+            Best Selling
+          </h1>
+        </div>
       </div>
 
       <div className="grid grid-cols-4 gap-[20px] mt-[80px] max-w-[1116px] m-auto ">
