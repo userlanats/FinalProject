@@ -5,6 +5,7 @@ import Product from "./pages/Product";
 import Listing from "./pages/Listing";
 import Cart from "./pages/Cart";
 import SignIn from "./pages/SignIn";
+import About from "./pages/About";
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
         <Route path="/listing" element={<Listing />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/signin" element={<SignIn />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   );
