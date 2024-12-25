@@ -114,7 +114,10 @@ const Navigation = () => {
               Categories
             </MenuButton>
 
-            <MenuItems className="absolute right-0 z-50 mt-2 w-48 origin-top-right bg-white border border-gray-300 rounded-md shadow-lg focus:outline-none">
+            <Link
+              to="/Listing"
+              className="absolute right-0 z-50 mt-2 w-48 origin-top-right bg-white border border-gray-300 rounded-md shadow-lg focus:outline-none"
+            >
               {categories.map((category, key) => (
                 <MenuItem key={key}>
                   <button
@@ -126,7 +129,7 @@ const Navigation = () => {
                   </button>
                 </MenuItem>
               ))}
-            </MenuItems>
+            </Link>
           </Menu>
         </li>
         <li className="transition hover:-translate-y-1 hover:scale-110 duration-500 rounded-[5px]">
