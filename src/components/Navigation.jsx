@@ -102,6 +102,7 @@ const Navigation = () => {
     navigate({ category });
   };
 
+  console.log(categories);
   return (
     <div className="mt-[10px] text-[#5C5F6A]">
       <ul className="flex gap-[32px]">
@@ -114,22 +115,22 @@ const Navigation = () => {
               Categories
             </MenuButton>
 
-            <Link
-              to="/Listing"
-              className="absolute right-0 z-50 mt-2 w-48 origin-top-right bg-white border border-gray-300 rounded-md shadow-lg focus:outline-none"
+            <MenuItems
+              transition
+              anchor="bottom end"
+              className="bg-white shadow-lg origin-top-right rounded-xl border border-white/5 bg-white/5 p-1 text-sm/6 text-white transition duration-100 ease-out [--anchor-gap:var(--spacing-1)] focus:outline-none data-[closed]:scale-95 data-[closed]:opacity-0"
             >
               {categories.map((category, key) => (
                 <MenuItem key={key}>
-                  <button
-                    onClick={() => handleCategorySelect(category)}
-                    className="block px-4 py-2 text-sm text-gray-700"
+                  <Link
+                    to={`/Listing?cat=${category}`}
+                    className="text-black p-2 block"
                   >
-                    {" "}
-                    {category}{" "}
-                  </button>
+                    {category}
+                  </Link>
                 </MenuItem>
               ))}
-            </Link>
+            </MenuItems>
           </Menu>
         </li>
         <li className="transition hover:-translate-y-1 hover:scale-110 duration-500 rounded-[5px]">
