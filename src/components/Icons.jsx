@@ -10,7 +10,7 @@ const Icons = () => {
       >
         <img
           className="w-[19px] h-[19px]"
-          src="/images/icon.2.svg"
+          src="/images/CartIcon.svg"
           alt="cart"
         />
       </Link>
